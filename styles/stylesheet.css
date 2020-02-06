@@ -1,0 +1,25 @@
+body {
+    padding: 2%;
+    background-color: #17a2b854 !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 100px !important;
+}
+
+
+button {
+    margin-top: 30px !important;
+    display: block !important;
+    width: auto !important;
+}
+
+.jumbotron {
+    padding: 32px !important;
+}
+
+.FizzBuzz {    
+    font-family: 'Fredericka the Great', cursive;
+}

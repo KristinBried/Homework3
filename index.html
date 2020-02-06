@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FizzBuzz game</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
+</head>
 
+<body>
+<h1 class="text-center">FizzBuzz game</h1>
+
+<div class="jumbotron">
+    <blockquote class="blockquote">
+        <p class="h1">FizzBuzz game rules</p>
+        <p class="lead">Fizz buzz is a group word game for children to teach them about division.
+        Players take turns to count incrementally, replacing any number divisible by
+        three with the word <b>"fizz"</b>, and any number divisible by five with the word <b>"buzz"</b>.</p>
+         <br>
+    </blockquote>
+
+    <hr>
+
+    <p class="h1">Control Your FizzBuzz game</p>
+    
+    <div class="container control-container">
+        <div class="row">
+
+          <div class="col-lg">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Starting value</span>
+                </div>
+                <input type="number" class="form-control" aria-label="Starting value" aria-describedby="inputGroup-sizing-default"
+                value="1" min="1" max="100">
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Ending value</span>
+                </div>
+                <input type="number" class="form-control" aria-label="Ending value" aria-describedby="inputGroup-sizing-default"
+                value="100" min="1" max="100">
+              </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Fizz value</span>
+                </div>
+                <input type="number" class="form-control" aria-label="Fizz value" aria-describedby="inputGroup-sizing-default"
+                value="3" min="1" max="100">
+              </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Buzz value</span>
+                </div>
+                <input type="number" class="form-control" aria-label="Buzz value" aria-describedby="inputGroup-sizing-default"
+                value="5" min="1" max="100">
+              </div>
+          </div>
+        </div>
+    </div>
+    
+
+    <button type="button" class="btn btn-primary btn-lg mx-auto bg-info text-white">Generate FizzBuzz</button>
+    <button type="button" class="btn btn-secondary btn-lg mx-auto bg-info text-white">Clear all</button>
+
+</div>
+
+
+
+
+</body>
+</html>
