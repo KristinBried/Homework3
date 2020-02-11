@@ -58,3 +58,7 @@ button {
 .fizz-buzz-class {
     background-color: #696d7d8a !important;
 }
+
+.input-group-text {
+    font-size: 18px !important;
+}
