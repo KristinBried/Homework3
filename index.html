@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
+    <script src="styles/script/fizzbuzz.js" defer></script>
 </head>
 
 <body>
@@ -35,8 +36,9 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Starting value</span>
                 </div>
-                <input type="number" class="form-control" aria-label="Starting value" aria-describedby="inputGroup-sizing-default"
-                value="1" min="1" max="100">
+                <input type="number" class="form-control" aria-label="Starting value" 
+                aria-describedby="inputGroup-sizing-default" id="name-starting-value" value = 1>
+                <p id="starting-number-alert" class="text-danger"></p>
             </div>
           </div>
 
@@ -45,8 +47,9 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Ending value</span>
                 </div>
-                <input type="number" class="form-control" aria-label="Ending value" aria-describedby="inputGroup-sizing-default"
-                value="100" min="1" max="100">
+                <input type="number" class="form-control ending-value" aria-label="Ending value" 
+                aria-describedby="inputGroup-sizing-default" id="name-ending-value" value=100>
+                <p id="ending-number-alert" class="text-danger"></p>
               </div>
           </div>
 
@@ -55,8 +58,10 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Fizz value</span>
                 </div>
-                <input type="number" class="form-control" aria-label="Fizz value" aria-describedby="inputGroup-sizing-default"
+                <input type="number" class="form-control" aria-label="Fizz value" 
+                aria-describedby="inputGroup-sizing-default" id="name-fizz-value"
                 value="3" min="1" max="100">
+                <p id="fizz-number-alert" class="text-danger"></p>
               </div>
           </div>
 
@@ -65,18 +70,23 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Buzz value</span>
                 </div>
-                <input type="number" class="form-control" aria-label="Buzz value" aria-describedby="inputGroup-sizing-default"
+                <input type="number" class="form-control" aria-label="Buzz value" 
+                aria-describedby="inputGroup-sizing-default" id="name-buzz-value" 
                 value="5" min="1" max="100">
+                <p id="buzz-number-alert" class="text-danger"></p>
               </div>
           </div>
         </div>
     </div>
     
 
-    <button type="button" class="btn btn-primary btn-lg mx-auto bg-info text-white">Generate FizzBuzz</button>
-    <button type="button" class="btn btn-secondary btn-lg mx-auto bg-info text-white">Clear all</button>
+    <button type="button" id="generate-btn" class="btn btn-primary btn-lg mx-auto bg-info text-white">Generate FizzBuzz</button>
+    <button type="button" id="clear-btn" class="btn btn-secondary btn-lg mx-auto bg-info text-white">Clear all</button>
 
 </div>
+<main>
+<p id="number-list" class="number-list-format"></p>
+</main>
 
 
 

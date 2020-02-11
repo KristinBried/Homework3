@@ -9,7 +9,6 @@ h1 {
     font-size: 100px !important;
 }
 
-
 button {
     margin-top: 30px !important;
     display: block !important;
@@ -22,4 +21,39 @@ button {
 
 .FizzBuzz {    
     font-family: 'Fredericka the Great', cursive;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 50px !important; 
+    }
+}
+
+
+.number-list-format {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 10px;
+      }
+
+.number-list-format > div {
+        padding: 20px;
+        text-align: center;
+        border: 2px solid #17a2b8;
+        background-color: #f0fff3;
+        font-size: 1.2em;
+        box-shadow: 2px 1px #17a2b8;
+    }
+
+.fizz-class {
+    background-color: #f9eecb !important;
+}
+
+.buzz-class {
+    background-color: #d2ecb3 !important;
+}
+
+.fizz-buzz-class {
+    background-color: #696d7d8a !important;
 }
