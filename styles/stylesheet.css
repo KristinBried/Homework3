@@ -23,13 +23,6 @@ button {
     font-family: 'Fredericka the Great', cursive;
 }
 
-@media screen and (max-width: 500px) {
-    h1 {
-        font-size: 50px !important; 
-    }
-}
-
-
 .number-list-format {
         display: grid;
         grid-template-columns: repeat(8, 1fr);

@@ -10,3 +10,8 @@
     .number-list-format > div {
         padding: 15px;
     }
+
+    h1 {
+        font-size: 50px !important; 
+    }
+
