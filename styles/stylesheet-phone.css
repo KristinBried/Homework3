@@ -1,0 +1,8 @@
+/* Media Quary for phones - max width 576px*/
+
+@media screen and (max-width: 576px) {
+    .number-list-format {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(100, 1fr);
+      }
+    }

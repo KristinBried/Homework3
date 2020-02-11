@@ -1,0 +1,7 @@
+/* Media Quary for tablets - min width 577 max width 992px*/
+@media screen and (max-width: 992px) {
+    .number-list-format {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+      }
+}

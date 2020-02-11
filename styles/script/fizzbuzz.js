@@ -28,6 +28,7 @@ console.log("Default mainīgais ir " + v);
 // END
 
 function createDivs() {
+  clearAll();
   var x = startingValue.value;
   var y = endingValue.value;
   var z = fizzValue.value;
@@ -53,10 +54,8 @@ function createDivs() {
     document.getElementById("number-list").appendChild(divs);
     x++;
     
+}   
 }
-   
-}
-
 
 function clearAll() {
   console.log("Clear all number list!");

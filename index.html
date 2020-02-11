@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet-tablet.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet-phone.css">
     <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
     <script src="styles/script/fizzbuzz.js" defer></script>
 </head>
@@ -37,7 +39,7 @@
                   <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Starting value</span>
                 </div>
                 <input type="number" class="form-control" aria-label="Starting value" 
-                aria-describedby="inputGroup-sizing-default" id="name-starting-value" value = 1>
+                aria-describedby="inputGroup-sizing-default" id="name-starting-value" value = 1 min=1 max=100>
                 <p id="starting-number-alert" class="text-danger"></p>
             </div>
           </div>
@@ -48,7 +50,7 @@
                   <span class="input-group-text bg-info text-white" id="inputGroup-sizing-default">Ending value</span>
                 </div>
                 <input type="number" class="form-control ending-value" aria-label="Ending value" 
-                aria-describedby="inputGroup-sizing-default" id="name-ending-value" value=100>
+                aria-describedby="inputGroup-sizing-default" id="name-ending-value" value=100 min=1 max=100>
                 <p id="ending-number-alert" class="text-danger"></p>
               </div>
           </div>
@@ -60,7 +62,7 @@
                 </div>
                 <input type="number" class="form-control" aria-label="Fizz value" 
                 aria-describedby="inputGroup-sizing-default" id="name-fizz-value"
-                value="3" min="1" max="100">
+                value="3" min=1 max=100>
                 <p id="fizz-number-alert" class="text-danger"></p>
               </div>
           </div>
