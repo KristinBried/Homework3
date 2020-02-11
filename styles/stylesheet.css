@@ -32,18 +32,19 @@ button {
 
 .number-list-format {
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         grid-gap: 10px;
       }
 
 .number-list-format > div {
-        padding: 20px;
+        padding: 30px;
         text-align: center;
         border: 2px solid #17a2b8;
         background-color: #f0fff3;
         font-size: 1.2em;
         box-shadow: 2px 1px #17a2b8;
+        align-self: stretch;
     }
 
 .fizz-class {

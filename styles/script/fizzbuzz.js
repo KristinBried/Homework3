@@ -13,7 +13,6 @@ const generateList = document.getElementById("generate-btn");
 const clearList = document.getElementById("clear-btn");
 const listOfCreatedNum = document.getElementById("number-list");
 
-//Part which logs the default values if they are not changed
 var x = startingValue.value;
 console.log("Default mainīgais ir " + x);
 
@@ -25,7 +24,6 @@ console.log("Default mainīgais ir " + z);
 
 var v = buzzValue.value;
 console.log("Default mainīgais ir " + v);
-// END
 
 function createDivs() {
   clearAll();
@@ -45,15 +43,13 @@ function createDivs() {
       else if ((x % z === 0) && (x % v === 0)) {
         divs.className = "fizz-buzz-class";
         var numberList = document.createTextNode("FIZZ BUZZ")
-      }
-        else {
+      } else {
         divs.className = "simple-class";
         var numberList = document.createTextNode(x) 
         };
     divs.appendChild(numberList);
     document.getElementById("number-list").appendChild(divs);
     x++;
-    
 }   
 }
 
@@ -70,6 +66,4 @@ function addListeners() {
   clearList.addEventListener("click", clearAll);
 }
 
-
 main();
-
