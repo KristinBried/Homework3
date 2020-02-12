@@ -66,4 +66,5 @@ function addListeners() {
   clearList.addEventListener("click", clearAll);
 }
 
+
 main();
