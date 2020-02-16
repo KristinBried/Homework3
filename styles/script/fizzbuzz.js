@@ -13,45 +13,47 @@ const generateList = document.getElementById("generate-btn");
 const clearList = document.getElementById("clear-btn");
 const listOfCreatedNum = document.getElementById("number-list");
 
-var x = startingValue.value;
+var x = parseInt(startingValue.value);
 console.log("Default mainīgais ir " + x);
 
-var y = endingValue.value;
+var y = parseInt(endingValue.value);
 console.log("Default mainīgais ir " + y);
 
-var z = fizzValue.value;
+var z = parseInt(fizzValue.value);
 console.log("Default mainīgais ir " + z);
 
-var v = buzzValue.value;
+var v = parseInt(buzzValue.value);
 console.log("Default mainīgais ir " + v);
 
 function createDivs() {
   clearAll();
-  var x = startingValue.value;
-  var y = endingValue.value;
-  var z = fizzValue.value;
-  var v = buzzValue.value;
+  var x = parseInt(startingValue.value);
+  var y = parseInt(endingValue.value);
+  var z = parseInt(fizzValue.value);
+  var v = parseInt(buzzValue.value);
   console.log("Function createDivs is ON");
+  console.log(" Pirms cikla = " + x + " / " + y + " / " + z + " / " + v);
     while (x <= y) {
-    var divs = document.createElement("div"); 
+      var divs = document.createElement("div"); 
       if ((x % z === 0)&& (x % v !== 0)) {
       divs.className = "fizz-class";
       var numberList = document.createTextNode("FIZZ")
       } else if ((x % v === 0) && (x % z !== 0)) {
-        divs.className = "buzz-class";
-        var numberList = document.createTextNode("BUZZ")}
+      divs.className = "buzz-class";
+      var numberList = document.createTextNode("BUZZ")}
       else if ((x % z === 0) && (x % v === 0)) {
-        divs.className = "fizz-buzz-class";
-        var numberList = document.createTextNode("FIZZ BUZZ")
+      divs.className = "fizz-buzz-class";
+      var numberList = document.createTextNode("FIZZ BUZZ")
       } else {
-        divs.className = "simple-class";
-        var numberList = document.createTextNode(x) 
-        };
+      divs.className = "simple-class";
+      var numberList = document.createTextNode(x) 
+      }
     divs.appendChild(numberList);
     document.getElementById("number-list").appendChild(divs);
+    console.log(" X is " + x + " Y is " + y + " Z is " + z + " V is " + v);
     console.log("Answer is printed!");
     x++;
-}   
+      }  
 }
 
 function clearAll() {
