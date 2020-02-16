@@ -8,6 +8,12 @@ h1 {
     font-family: 'Fredericka the Great', cursive;
 }
 
+h2 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 4em !important;
+}
+
+
 button {
     margin-top: 30px !important;
     display: block !important;
