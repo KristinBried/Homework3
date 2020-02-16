@@ -49,6 +49,7 @@ function createDivs() {
         };
     divs.appendChild(numberList);
     document.getElementById("number-list").appendChild(divs);
+    console.log("Answer is printed!");
     x++;
 }   
 }
@@ -58,6 +59,7 @@ function clearAll() {
   while (listOfCreatedNum.firstChild) {
     listOfCreatedNum.removeChild(listOfCreatedNum.firstChild);
   }
+  console.log("Number list is cleared!");
 }
 
 function addListeners() {
